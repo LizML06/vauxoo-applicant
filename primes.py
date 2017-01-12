@@ -26,3 +26,4 @@ class PrimeClass(object):
                 return False
         # El numero es primo devuelve verdadero
         return True
+        
