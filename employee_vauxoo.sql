@@ -43,14 +43,15 @@ INSERT INTO employee_department (id, name, description) VALUES (5, 'Centro de C√
 INSERT INTO employee_department (id, name, description) VALUES (6, 'Direcci√≥n', 'Departamento Directivo');
 
 INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (1, 'Carolina', 'Jimenez', 1, 1);
+INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (4, 'Mariana', 'Perez', 1, 4);
 INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (2, 'Mario', 'Torres', 4, 2);
 INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (3, 'Jose', 'Ruiz', 2, 3);
-INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (4, 'Mariana', 'Perez', 1, 4);
+
 
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (1, 1);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (1, 3);
-INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (2, 2);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (2, 1);
+INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (2, 3);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (3, 2);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (3, 3);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (4, 1);
