@@ -7,6 +7,7 @@ CREATE TABLE employee (
 	id integer PRIMARY KEY NOT NULL,
 	first_name varchar(50),
 	last_name varchar(50),
+    id_boss integer REFERENCES employee,
     id_departament integer REFERENCES employee_department
 );
 
@@ -49,10 +50,10 @@ Insert into employee_department (id, name, description) values (4, 'Actividades 
 Insert into employee_department (id, name, description) values (5, 'Centro de Cómputo', 'Departamento Administrativo');
 Insert into employee_department (id, name, description) values (6, 'Dirección', 'Departamento Directivo');
 
-Insert into employee (id, first_name, last_name, id_departament) values (1, 'Carolina', 'Jimenez', 2);
-Insert into employee (id, first_name, last_name, id_departament) values (2, 'Mario', 'Torres', 1);
-Insert into employee (id, first_name, last_name, id_departament) values (3, 'José', 'Ruiz', 2);
-Insert into employee (id, first_name, last_name, id_departament) values (4, 'Mariana', 'Peréz', 3);
+Insert into employee (id, first_name, last_name, id_boss, id_departament) values (1, 'Carolina', 'Jimenez', 1,1);
+Insert into employee (id, first_name, last_name, id_boss, id_departament) values (2, 'Mario', 'Torres', 4,2);
+Insert into employee (id, first_name, last_name, id_boss, id_departament) values (3, 'José', 'Ruiz', 2,3);
+Insert into employee (id, first_name, last_name, id_boss, id_departament) values (4, 'Mariana', 'Peréz', 1,4);
 
 
 
