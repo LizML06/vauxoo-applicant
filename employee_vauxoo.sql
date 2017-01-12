@@ -3,11 +3,10 @@
 --       You can create database locally to test it.
 --       Consider add ';' at end sentence.
 
-
 CREATE TABLE employee_hobby (
     id integer PRIMARY KEY NOT NULL,
     name varchar (50),
-    description varchar (100) 
+    description varchar (100)
 );
 
 CREATE TABLE employee_department (
@@ -56,15 +55,3 @@ INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (3, 2);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (3, 3);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (4, 1);
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (4, 2);
-
-
-
-
-
-
-
-
-
-
-
--- ...
