@@ -20,7 +20,7 @@ CREATE TABLE employee (
     first_name varchar (50),
     last_name varchar (50),
     id_boss integer REFERENCES employee,
-    id_departament integer REFERENCES employee_department
+    id_department integer REFERENCES employee_department
 );
 
 CREATE TABLE employee_hobbies (
@@ -41,10 +41,10 @@ INSERT INTO employee_department (id, name, description) VALUES (4, 'Actividades 
 INSERT INTO employee_department (id, name, description) VALUES (5, 'Centro de Cómputo', 'Departamento Administrativo');
 INSERT INTO employee_department (id, name, description) VALUES (6, 'Dirección', 'Departamento Directivo');
 
-INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (1, 'Carolina', 'Jimenez', 1, 1);
-INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (4, 'Mariana', 'Perez', 1, 4);
-INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (2, 'Mario', 'Torres', 4, 2);
-INSERT INTO employee (id, first_name, last_name, id_boss, id_departament) VALUES (3, 'Jose', 'Ruiz', 2, 3);
+INSERT INTO employee (id, first_name, last_name, id_boss, id_department) VALUES (1, 'Carolina', 'Jimenez', 1, 1);
+INSERT INTO employee (id, first_name, last_name, id_boss, id_department) VALUES (4, 'Mariana', 'Perez', 1, 4);
+INSERT INTO employee (id, first_name, last_name, id_boss, id_department) VALUES (2, 'Mario', 'Torres', 4, 2);
+INSERT INTO employee (id, first_name, last_name, id_boss, id_department) VALUES (3, 'Jose', 'Ruiz', 2, 3);
 
 
 INSERT INTO employee_hobbies (id_employee, id_hobby) VALUES (1, 1);

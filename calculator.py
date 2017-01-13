@@ -21,4 +21,3 @@ class CalculatorClass(object):
             resultado = resultado + num_list[incremento]
         # Resultado de la suma de los valores de la lista
         return resultado
-        
